@@ -3,18 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SyMP's documentation!
-================================
+Welcome to SyMP Framework's documentation!
+==========================================
+
+This is the documentation for all of the services that compose the System Model Processing Framework.
+
+.. image:: images/SyMP.png
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    get-started/index
+   client/index
+   sae/index
+   sme/index
+   ah/index
    example/index
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
