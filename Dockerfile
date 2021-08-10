@@ -16,7 +16,7 @@ ENV PUBLIC_FOLDER /opt/www
 RUN mkdir -p $PUBLIC_FOLDER
 RUN npm install -g http-server@0.9.0
 
-COPY --from=build /usr/src/rtd/build /opt/www
+COPY --from=build /usr/src/rtd/build $PUBLIC_FOLDER
 
-CMD http-server $PUBLIC_FOLDER
+CMD http-server $PUBLIC_FOLDER/html
 EXPOSE 8080
