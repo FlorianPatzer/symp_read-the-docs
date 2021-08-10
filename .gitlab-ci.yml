@@ -13,14 +13,14 @@ services:
   
 rtd-master:
   variables:
-    DOCKER_FILE_PATH: .
+    DOCKER_FILE_PATH: ./
     DOCKER_IMAGE_SUBPROJECT: /symp-rtd
   extends:
     - .docker-build-master
 
 rtd-branch:
   variables:
-    DOCKER_FILE_PATH: .
+    DOCKER_FILE_PATH: ./
     DOCKER_IMAGE_SUBPROJECT: /symp-rtd
   extends:
     - .docker-build-branch
