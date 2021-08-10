@@ -18,5 +18,5 @@ RUN npm install -g http-server@0.9.0
 
 COPY --from=build /usr/src/rtd/build $PUBLIC_FOLDER
 
-CMD http-server $PUBLIC_FOLDER/html --port 8085
+CMD http-server $PUBLIC_FOLDER/html -p 8085
 EXPOSE 8085
