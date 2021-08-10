@@ -7,10 +7,10 @@ Welcome to SyMP's documentation!
 ================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
 
-
+   get-started/index
+   example/index
 
 Indices and tables
 ==================
