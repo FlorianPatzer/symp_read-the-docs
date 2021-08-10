@@ -1,0 +1,17 @@
+include:
+  - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/gitlab-ci-common.yml
+  - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/default/gitlab-ci-docker-build.yml
+  - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/default/gitlab-ci-k8s-deploy-prod.yml
+
+
+variables:
+  DOCKER_HOST: tcp://localhost:2375
+  K8S_NAMESPACE: symp
+  K8S_KUSTOMIZE_PATH: templates/k8s/overlays/rancher
+
+services:
+  - docker:18.09-dind
+
+default:
+  tags:
+    - ILT
