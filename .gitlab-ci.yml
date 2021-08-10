@@ -1,7 +1,7 @@
 include:
-  - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/gitlab-ci-common.yml
-  - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/default/gitlab-ci-docker-build.yml
-  - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/default/gitlab-ci-k8s-deploy-prod.yml
+  - remote: https://ci-templates.k8s.ilt-dmz.iosb.fraunhofer.de/templates/templates/gitlab-ci-common.yml
+  - remote: https://ci-templates.k8s.ilt-dmz.iosb.fraunhofer.de/templates/templates/default/gitlab-ci-docker-build.yml
+  - remote: https://ci-templates.k8s.ilt-dmz.iosb.fraunhofer.de/templates/templates/default/gitlab-ci-k8s-deploy-prod.yml
 
 default:
   tags:
