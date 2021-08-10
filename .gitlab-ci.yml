@@ -3,6 +3,9 @@ include:
   - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/default/gitlab-ci-docker-build.yml
   - remote: https://ci-templates.docker01.ilt-dmz.iosb.fraunhofer.de/templates/default/gitlab-ci-k8s-deploy-prod.yml
 
+default:
+  tags:
+    - ILT
 
 variables:
   DOCKER_HOST: tcp://localhost:2375
