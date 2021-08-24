@@ -5,3 +5,5 @@ services:
         container_name: symp-rtd
         build: .
         restart: unless-stopped
+        ports: 
+            - 8085:8085
