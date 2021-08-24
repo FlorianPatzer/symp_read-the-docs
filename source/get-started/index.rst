@@ -149,6 +149,7 @@ you can proceede forward with the following steps:
 
 1. Configure the repositories URL and the branch or the tag which you want to clone in the ``repositories.config`` file.
 2. Run the ``cloneAll.sh`` script to clone all of the repositories.
+3. Perform the actions described in ``Step 2. Configure the environment files and generate SSL certificates``
 
 .. note::
     The repositories are cloned one directory up (i.e. in the folder where the symp-helpers folder is created). It's advisable
